@@ -1,12 +1,12 @@
 import ADODB from "node-adodb";
 
 const connection = ADODB.open(
-  "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:/Users/USER/Desktop/all wheel/Industry.mdb"
+  "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:/DataBase/Tablas.mdb"
 );
 
-async function connectDB() {
+export async function connectDB() {
   try {
-    const data = await connection.query("SELECT TOP 1 * FROM copper");
+    const data = await connection.query("SELECT TOP 1 * FROM users");
 
     console.log("✅ Database Connected");
     // console.log(data);
@@ -16,4 +16,4 @@ async function connectDB() {
   }
 }
 
-export default connectDB;
+export default connection;
