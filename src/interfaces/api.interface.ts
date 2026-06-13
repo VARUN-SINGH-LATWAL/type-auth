@@ -3,8 +3,6 @@ export interface ApiResponse {
   success: boolean;
 }
 
-export interface ApiResponseLogin {
-  message: string;
-  success: boolean;
+export interface ApiResponseLogin extends ApiResponse {
   accessToken? : string;
 }

@@ -66,9 +66,8 @@ class authModel {
         userName : user.userName,
         email : user.email,
         role : user.role
-      },"Varun_Latwal",{expiresIn : '1h'})
+      },"Varun_Latwal",{expiresIn : '10m'})
 
-      console.log(accessToken,"accessToken")
        return {
           success : true,
           message : "Login Successful.",

@@ -1,7 +1,6 @@
 import authModel from "../models/auth.model.js";
 import type { Request, Response } from "express";
 import  type {RegisterBody, LoginBody} from "./../interfaces/auth.interface.js"
-import type { promises } from "node:dns";
 
 
 class authController {
